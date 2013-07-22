@@ -1,0 +1,11 @@
+# 인텔리J 프로젝트 파일 제외
+.idea/
+*.iml
+# out 파일 제외
+out/
+# 이클립스 프로젝트 파일 제외
+.project
+.settings/
+.classpath
+# Mac 
+.DS_Store
