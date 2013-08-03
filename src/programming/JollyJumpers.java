@@ -1,5 +1,8 @@
 package programming;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: enosent7
@@ -10,23 +13,31 @@ package programming;
 public class JollyJumpers {
 
     public String jollyCheck(int[] input){
-        String message = "Jolly";
 
+        String success = "Jolly";
+        String fail = "Not jolly";
 
-        for(int i = 1; i < input.length-1; i++) {
+        int size = input.length;
 
-            int preDiff = Math.abs(input[i-1] - input[i]) -1;
-            int postDiff = Math.abs(input[i+1] - input[i]);
+        if(size == 1) return success;
 
-            if(preDiff != postDiff) {
-                message = "Not jolly";
-                break;
-            }
+        ArrayList<Integer> diffs = new ArrayList<Integer>();
 
+        for(int i = 0; i < size-1; i++) {
+            int diff = Math.abs(input[i] - input[i+1]);
+
+            if(diff > size) return fail;
+
+            diffs.add(new Integer(diff));
         }
 
-        return message;
-    }
+        for(int i = 1; i < size; i++){
+            if(!diffs.contains(new Integer(i))){
+                return fail;
+            }
+        }
 
+        return success;
+    }
 
 }
