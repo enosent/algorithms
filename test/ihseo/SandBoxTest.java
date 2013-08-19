@@ -1,5 +1,6 @@
 package ihseo;
 
+
 /**
  * User: enosent7
  * Date: 13. 7. 20.
@@ -37,6 +38,19 @@ public class SandBoxTest {
         String a = "p";
 
         System.out.println(a.charAt(0));
+
+
+        System.out.println("> " + Integer.parseInt("-1"));
+        System.out.println("> " + Integer.valueOf("-1"));
+
+
+
+        int test = 1;
+        int maxTest = 10;
+        for(test++; test <= maxTest; test++);
+
+        System.out.println(test);
+
 
     }
 }
