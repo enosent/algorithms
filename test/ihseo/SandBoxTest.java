@@ -1,6 +1,8 @@
 package ihseo;
 
 
+import java.util.Arrays;
+
 /**
  * User: enosent7
  * Date: 13. 7. 20.
@@ -50,6 +52,33 @@ public class SandBoxTest {
         for(test++; test <= maxTest; test++);
 
         System.out.println(test);
+
+
+        String[] text = {"A", "2", "4", "5", "3", "6", "T", "8", "9", "7", "J", "K", "Q"};
+
+        for(String temp : text) {
+            System.out.print(temp + "\t");
+        }
+
+        System.out.println();
+        Arrays.sort(text);
+        System.out.println();
+
+        for(String temp : text) {
+            System.out.print(temp+"\t");
+        }
+
+
+        int[] sample = new int[] { 1, 2, 3, 4, 5 };
+
+        for(int i = sample.length-1; i > 1; i--){
+
+            System.out.println(sample[i]);
+            System.out.println(sample[i-1]);
+
+            System.out.println(sample[i] - sample[i-1]);
+
+        }
 
 
     }
