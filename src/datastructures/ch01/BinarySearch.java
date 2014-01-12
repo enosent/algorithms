@@ -54,4 +54,4 @@ public class BinarySearch {
             System.out.println("타겟 저장 인덱스: " + index);
         }
     }
-}                                                                R
+}

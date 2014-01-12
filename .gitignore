@@ -9,3 +9,4 @@ out/
 .classpath
 # Mac 
 .DS_Store
+lib/
